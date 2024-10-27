@@ -3,20 +3,23 @@
     margin: 0;
     padding: 0;
 }
-.social-link .icons{ display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;}
 /* navbar */
 .main-content{
     position: sticky;
     top: 0;
-    overflow: hidden;
     z-index:1000;
 }
 #navbar-color{
-    background-color:#EDDCC2;
+    background-color:#f4f4f4;
     color: black;
+}
+.dropdown-item{
+    background-color:#f4f4f4;
+    color: black;
+}
+.dropdown-menu{
+    padding:0px;
+    z-index: 1000;
 }
 .navbar-nav{
     margin: auto;
@@ -33,37 +36,10 @@
 }
 #btn-taskbar{
     background-color: #DEC79B;
-   
     margin-left:0px;
 }
 /* navbar */
 /* main content */
-/* content */
-.content{
-    margin-top: 150px;
-    margin-left: 60px;
-}
-.content h1{
-    font-size: 50px;
-}
-#btn1 button{
-    width: 150px;
-    height: 32px;
-    background: transparent;
-    border: 1px solid black;
-    letter-spacing: 3px;
-    font-weight: bold;
-    transition: 0.5s ease;
-    cursor: pointer;
-}
-#btn1 button:hover{
-    background-color: green;
-}
-@media screen and (max-width:420px){
-    .content h1{
-        font-size: 30px;
-    }
-}
 /* content */
 
 /* main content */
