@@ -39,13 +39,7 @@
     background-color: #DEC79B;
     margin-left:0px;
 }
-/* navbar */
-/* main content */
-/* content */
 
-/* main content */
-
-/* card1 */
 #btn2 button{
     width: 100px;
     height: 30px;
@@ -59,27 +53,9 @@
 }
 /*về chúng tôi*/
 
-.box-banner-inf{
-    width:100%;
-    height:100%;
-    background-image: 
-    linear-gradient(0,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
-    url(../Image/về\ chúng\ tôi.webp);
-}
-#button_page1{
-    text-decoration: none;
-    border:1px black ;
-    background-color:rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-   width:50px;
-   height:30px;
-   padding: 5px;
-}
- #button_page1 :hover{
-    border:1px black;
-    background-color: rgba(0, 0, 0, 0) ;
-    color: black;
-}
+
+
+
 h2.title{
     font-size:35px;
     margin-top:250px;
