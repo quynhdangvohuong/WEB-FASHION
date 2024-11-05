@@ -2,14 +2,19 @@
 *{
     margin: 0;
     padding: 0;
-}
-/* navbar */
-.main-content{
-    position: sticky !important;
-    top: 0;
-    Z-index:1000;
+
 }
 
+/* navbar */
+.header-1{
+    overflow:visible;
+    position:static ;
+}
+nav{
+    position: sticky !important;
+    top: 0;
+    Z-index:10;
+}
 #navbar-color{
     background-color:#f4f4f4;
     color: black;
@@ -66,4 +71,18 @@ h2.title{
     text-align: justify;
     background-color: #f4f4f4;
     color: black;
+}
+.flex-container-information{
+    margin: 0 -15px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+.wrap-pd-infor.box_stick {
+    position: -webkit-sticky;
+    position: sticky ;
+    max-height: 100vh;
+    top: 0;
+    border-right: 1px solid #ededed;
 }
