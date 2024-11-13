@@ -152,9 +152,10 @@ window.HaravanAnalytics.AutoTrack = true;
             color: #333;
         }
         .product-price {
-            color: red;
+            color: rgba(255, 0, 0, 0.797);
             font-size: 1.5rem;
             font-weight: bold;
+            font-size:35px;
         }
         .button-group button {
             width: 100%;
@@ -165,10 +166,15 @@ window.HaravanAnalytics.AutoTrack = true;
         position: sticky;
         bottom: 0;
         z-index: 10;}
-
+        .product-gallery__thumbs{
+          display:flex;
+          flex-direction: column;
+          
+        }
     </style>
 </head>
 <body>
+  <!--header-->
   <div class="row">
     <div class="col" id="header-1">
       <div class="row">
@@ -232,80 +238,36 @@ window.HaravanAnalytics.AutoTrack = true;
       </div>
     </div>
   </div>
-    <div class="container mt-5">
-        <div class="row">
+  <div class="container mt-5">
+    <div class="row">
+          <!--sản phẩm đang chọn-->
             <!-- Product Image and Gallery -->
-            <div class="col-md-8 col-sm-12 col-xs-12">
+      <div class="col-md-8 col-sm-12 col-xs-12">
 							<div class="product-gallery">
 								<div class="product-gallery__thumbs-container hidden-sm hidden-xs">
-									<div class="product-gallery__thumbs thumb-fix">
-										
-										<div class="product-gallery__thumb">
-											<a class="product-gallery__thumb-placeholder" href="javascript:void(0);" data-image="//product.hstatic.net/200000536797/product/465029648_932931205552824_9144954282656978013_n_27529414d21b462f899ac4f7003d83f1_master.jpg" data-zoom-image="//product.hstatic.net/200000536797/product/465029648_932931205552824_9144954282656978013_n_27529414d21b462f899ac4f7003d83f1_master.jpg">
-												<img alt=" Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271 " 
-                        src="../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271.webp">
-											</a>
-										</div>
-										
-										<div class="product-gallery__thumb">
-											<a class="product-gallery__thumb-placeholder" href="javascript:void(0);" data-image="//product.hstatic.net/200000536797/product/465168836_932931208886157_4053660070293511473_n_247f73afd7514e0ba38b96643b3e2463_master.jpg" data-zoom-image="//product.hstatic.net/200000536797/product/465168836_932931208886157_4053660070293511473_n_247f73afd7514e0ba38b96643b3e2463_master.jpg">
-												<img alt=" Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271 " 
-                        src="../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271 (2).webp">
-											</a>
-										</div>
-										
-										<div class="product-gallery__thumb">
-											<a class="product-gallery__thumb-placeholder" href="javascript:void(0);" data-image="//product.hstatic.net/200000536797/product/465132990_932931212219490_254628973561317652_n_1a02587b80ef4867b05e129137a6f639_master.jpg" data-zoom-image="//product.hstatic.net/200000536797/product/465132990_932931212219490_254628973561317652_n_1a02587b80ef4867b05e129137a6f639_master.jpg">
-												<img alt=" Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271 " 
-                        src="../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271(3).webp" data-image="//product.hstatic.net/200000536797/product/465132990_932931212219490_254628973561317652_n_1a02587b80ef4867b05e129137a6f639_master.jpg">
-											</a>
-										</div>
-										
-										<div class="product-gallery__thumb active">
-											<a class="product-gallery__thumb-placeholder" href="javascript:void(0);" data-image="//product.hstatic.net/200000536797/product/465122089_932931215552823_7461815956343448955_n_5b22a97745f742409cb0c487a70078dd_master.jpg" data-zoom-image="//product.hstatic.net/200000536797/product/465122089_932931215552823_7461815956343448955_n_5b22a97745f742409cb0c487a70078dd_master.jpg">
-												<img alt=" Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271 " 
-                        src="../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271(4).webp" data-image="//product.hstatic.net/200000536797/product/465122089_932931215552823_7461815956343448955_n_5b22a97745f742409cb0c487a70078dd_master.jpg">
-											</a>
-										</div>
-										
+									<div class="product-gallery__thumbs thumb-fix" style="">
+										<img class="my-4" src="../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271.webp" alt="Thumbnail 1" onclick="showImage('../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271.webp')">
+                    <img class="my-4" src="../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271 (2).webp" alt="Thumbnail 2" onclick="showImage('../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271 (2).webp')">
+                    <img class="my-4" src="../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271(3).webp" alt="Thumbnail 3" onclick="showImage('../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271(3).webp')">
+                    <img class="my-4" src="../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271(4).webp" alt="Thumbnail 3" onclick="showImage('../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271(4).webp')">      
 									</div>
 								</div> 
+
 								<div class="product-image-detail box__product-gallery scroll">
-									<ul id="sliderproduct" class="site-box-content slide_product">
-										
-										<li class="product-gallery-item gallery-item current">
-											<img class="product-image-feature" style="width: 100%;" 
-                      src="../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271.webp" alt=" Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271 ">
-										</li>	
-										
-										<li class="product-gallery-item gallery-item current">
-											<img class="product-image-feature" style="width: 100%;" 
-                      src="../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271 (2).webp" alt=" Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271 ">
-										</li>	
-										
-										<li class="product-gallery-item gallery-item current">
-											<img class="product-image-feature" style="width: 100%;" 
-                      src="../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271(3).webp" alt=" Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271 ">
-										</li>	
-										
-										<li class="product-gallery-item gallery-item current">
-											<img class="product-image-feature" style="width: 100%;" 
-                      src="../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271(4).webp" alt=" Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271 ">
-										</li>	
-										
-									</ul>
-									<div class="product-image__button">
-										<div id="product-zoom-in" class="product-zoom icon-pr-fix " aria-label="Zoom in" title="Zoom in">
-											<span class="zoom-in" aria-hidden="true">
-												<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36; width: 30px; height: 30px;" xml:space="preserve"><polyline points="6,14 9,11 14,16 16,14 11,9 14,6 6,6 "></polyline><polyline points="22,6 25,9 20,14 22,16 27,11 30,14 30,6 "></polyline><polyline points="30,22 27,25 22,20 20,22 25,27 22,30 30,30 "></polyline><polyline points="14,30 11,27 16,22 14,20 9,25 6,22 6,30 "></polyline> </svg>
-											</span>
-										</div>		
-									<div class="gallery-index icon-pr-fix"><span class="current">4</span> / <span class="total">4</span></div></div>
+									<img id="mainImage" src="../Image/Áo kiểu bẹt vai bèo dài tay nữ tính mã 9271.webp" alt="Main Image">
+									
 								</div>
+
+                <script>
+                  function showImage(imageSrc) {
+                    document.getElementById('mainImage').src = imageSrc;
+                  }
+                </script>
+
 							</div>		
-						</div>
+			</div>
             <!-- Product Details -->
-          <div class="col-md-4 col-sm-12 col-xs-12">
+      <div class="col-md-4 col-sm-12 col-xs-12">
                 <h2>Áo cúp ngực sọc ngang đính nút ôm dáng mã 9216</h2>
                 <p class="product-price">135.000₫</p>
                 <div class="form-group">
@@ -358,11 +320,11 @@ window.HaravanAnalytics.AutoTrack = true;
                     <p><strong>Màu sắc:</strong> Sọc đen, Sọc kem</p>
                 </div>
           </div>
-        </div>
+      </div>
       <!--Sản phẩm liên quan -->
-        <div class="list-productRelated clearfix">
+      <div class="list-productRelated clearfix">
           <div class="heading-title text-center">
-            <h2>Sản phẩm liên quan</h2>
+            <h2 class="my-5"><b>Sản phẩm liên quan</b></h2>
           </div><div class="content-product-list row">
             <div class="col-md-4 col-sm-6 col-xs-6 pro-loop ">
               
@@ -681,8 +643,6 @@ window.HaravanAnalytics.AutoTrack = true;
                 </p>
               </div>
             </div>
-            
-            
             
           </div>
         </div>	
@@ -1322,16 +1282,6 @@ window.HaravanAnalytics.AutoTrack = true;
         
             
             <div class="col-md-4 col-sm-6 col-xs-6 pro-loop  pro-loop-lastHide ">
-              
-        
-        
-        
-        
-        
-        
-        
-        
-          
         
         <div class="product-block product-resize fixheight" style="height: 453px;">
           <div class="product-img ">
@@ -1381,17 +1331,10 @@ window.HaravanAnalytics.AutoTrack = true;
           </div>
         </div>	
         
-        
-        
             </div>
-            
-            
-            
-            
-            
           </div>
             
-        </div>
+      </div>
         <!--footer-->
     <div class="container">
       <div class="col my-5">
@@ -1440,6 +1383,7 @@ window.HaravanAnalytics.AutoTrack = true;
     </div>
   <!--footer-->
     </div>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
