@@ -13,7 +13,7 @@
 nav{
     position: sticky !important;
     top: 0;
-    Z-index:1000;
+    Z-index:1010;
 }
 #navbar-color{
     background-color:#f4f4f4;
@@ -86,3 +86,4 @@ h2.title{
     top: 0;
     border-right: 1px solid #ededed;
 }
+
